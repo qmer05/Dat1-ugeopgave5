@@ -9,14 +9,15 @@ public class Customer {
     private String userName;
     private int id;
 
-    public Customer(String firstName, String lastName, String userName) {
+    public Customer(String firstName, String lastName, String userName, int id) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
+        this.id = id;
     }
 
     public String toString() {
-        return "Name: " + firstName + " " + lastName + "\tUsername: " + userName;
+        return "Name: " + firstName + " " + lastName + "\tUsername: " + userName + "\tUserID: " + id;
     }
 
     public String getFirstName() {
