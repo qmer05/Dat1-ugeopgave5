@@ -6,9 +6,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Cafe {
-    private static ArrayList<String> coffeeMenu = new ArrayList<>();
-
-    public static void loadMenuData() {
+    private ArrayList<String> coffeeMenu;
+    public Cafe(){
+        coffeeMenu = new ArrayList<>();
+    }
+    public void loadMenuData() {
         File file = new File("coffee.txt");
         try {
             Scanner scanner = new Scanner(file);

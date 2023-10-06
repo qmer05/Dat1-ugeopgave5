@@ -16,6 +16,7 @@ public class Customer {
         this.id = id;
     }
 
+    @Override
     public String toString() {
         return "Name: " + firstName + " " + lastName + "\tUsername: " + userName + "\tUserID: " + id;
     }

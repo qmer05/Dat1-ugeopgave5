@@ -22,13 +22,13 @@ public class Main {
 
         printResult(isNormal(building));
 
-        }
+    }
 
 
-    public static int countLampsInBuilding(Building building) {
+    public static int countLampsInBuilding(Building inputBuilding) {
 
         int countLamps = 0;
-        ArrayList<Room> rooms = building.getRooms();
+        ArrayList<Room> rooms = inputBuilding.getRooms();
         for (Room r : rooms) {
             countLamps += r.getNumberOfLamps();
         }
@@ -43,12 +43,12 @@ public class Main {
              */
     }
 
-    public static boolean isNormal(Building building){
+    public static boolean isNormal(Building building) {
         return building.getNumberOfFloors() > building.getRooms().size();
     }
 
     public static void printResult(boolean result) {
-        if(result) {
+        if (result) {
             System.out.println("true");
         } else {
             System.out.println("This is an odd building");
